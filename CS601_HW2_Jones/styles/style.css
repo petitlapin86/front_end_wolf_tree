@@ -1,0 +1,36 @@
+
+
+/*NAVIGATION BAR*/
+.navbar {
+  text-align: center;
+  background-color: #064F40; /*set the background color*/
+  width: 100%; /*make the nav full screen width*/
+  height: 40px;
+  margin: 0 auto;
+  display: grid; /*using css grid layout*/
+  grid-template-columns: 1fr auto 1fr; /*create 3 columns with grid*/
+}
+
+/*NAVBAR GRID COLUMNS*/
+#navbar__logo { /*I thought about combining this with navbar__title but it seemed like keeping the grid seperate would be better for reusability?*/
+  grid-column: 2; /*positioning centered*/
+}
+
+#navbar__menu { /*I thought about combining this with navbar__link but it seemed like keeping the grid seperate would be better for reusability?*/
+  grid-column: 3; /*positioning on the right*/
+}
+
+/*NAVBAR STYLING*/
+/*This is navbar menu items*/
+.navbar__title {
+  text-decoration: none; /*get rid of default blue link underline*/
+  text-transform: uppercase;
+  color: white;
+}
+
+/*This is navbar menu items*/
+.navbar__link {
+  text-decoration: none; /*get rid of default blue link underline*/
+  text-transform: uppercase;
+  color: #B2A59F;
+}

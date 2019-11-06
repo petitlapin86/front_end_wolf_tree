@@ -4,20 +4,24 @@
   <head>
     <title>WolfTree</title> <!--shows up in browser title bar-->
     <!--link to CSS-->
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
-    <link rel="stylesheet" type="text/css" media="print" href="print.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" media="print" href="styles/print.css">
   </head>
 
   <body>
 
     <header> <!--Navigation Bar-->
-    <nav>  <!--will use css instead of align next week - just for vizual purposes today-->
-      <a href="about.html">ABOUT</a> |
-      <a href="menu.html">MENU</a> |
-      <a href="spotlight.html">SPOTLIGHT</a> |
-      <a href="findUs.html">FIND US</a>
+    <nav class="navbar">  <!--will use css instead of align next week - just for vizual purposes today-->
+      <a href="#" class="navbar__title" id="navbar__logo">WOLF TREE</a>
+      <div id="navbar__menu">
+      <a class="navbar__link" href="about.html">ABOUT</a> |
+      <a class="navbar__link" href="menu.html">MENU</a> |
+      <a class="navbar__link" href="spotlight.html">SPOTLIGHT</a> |
+      <a class="navbar__link" href="findUs.html">FIND US</a>
+      </div>
     </nav>
     </header>
+
 
     <section>
     <br> <!---just using to create some space till css is added-->
