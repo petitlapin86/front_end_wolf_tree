@@ -70,18 +70,27 @@ h3 {
   font-size: 20px;
   text-transform: uppercase;
   text-align: left;
+  margin-left: 25px;
 }
 
 p {
 color: #d0bcb3;
-text-align: center;
-padding: 50px;
+text-align: left;
+padding: 40px;/*adding padding so the left justified content is centered*/
+line-height: 30px; /*adding line height so it matches the li items above*/
 }
 
 ul,li {
   list-style-type: none;
   text-align: left;
   color: #d0bcb3;
+  padding: 5px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.scratch {
+  line-height: 30px;
 }
 
 .hours{
@@ -188,7 +197,7 @@ ul,li {
       }
 
       .menu__eat, .menu__drink {
-        font-size: 50px;
+        font-size: 60px;
         font-family:'Alegreya Sans';
         color:white;
         text-decoration: none;
