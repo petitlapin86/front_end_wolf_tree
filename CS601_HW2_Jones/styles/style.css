@@ -7,18 +7,26 @@
 /*NAVIGATION BAR*/
 .navbar {
   text-align: center;
-  background-color: #064F40; /*set the background color*/
+  background-color:  #032f26;  /*#04372c;*/ /*set the background color*/
   width: 100%; /*make the nav full screen width*/
   height: 125px;
   margin: 0;
   display: grid; /*using css grid layout*/
   grid-template-columns: 1fr auto 1fr; /*create 3 columns with grid*/
+  grid-template-rows: 1fr 1fr;
 }
 
 /*NAVBAR GRID COLUMNS*/
-#navbar__grid--center { /*I thought about combining this with navbar__title but it seemed like keeping the grid seperate would be better for reusability?*/
+#navbar__grid--title { /*I thought about combining this with navbar__title but it seemed like keeping the grid seperate would be better for reusability?*/
   grid-column: 2; /*positioning centered*/
+  grid-row: 1;
   padding-top: 30px;
+}
+
+#navbar__grid--menu{
+  grid-column: 2; /*positioning centered*/
+  grid-row: 2;
+  padding-top: 10px;
 }
 
 #navbar__grid--right { /*I thought about combining this with navbar__link but it seemed like keeping the grid seperate would be better for reusability?*/
@@ -42,7 +50,8 @@
   text-decoration: none; /*get rid of default blue link underline*/
   text-transform: uppercase;
   color: #d0bcb3; /*#B2A59F*/
-  padding-left: 30px;
+  font-size: 15px;
+  padding: 15px;
 }
 
 /*This is navbar social icons*/
@@ -66,8 +75,8 @@ text-align: center;
 
 /*BUTTON STYLING*/
 .button {
-	box-shadow:inset 0px 1px 0px 0px #91b8b3;
-	background-color:#064f40;
+	box-shadow:inset 0px 1px 0px 0px #1e6053;
+	background-color:#032f26;
 	border-radius:5px;
 	cursor:pointer;
 	color:#ffffff;
@@ -75,13 +84,13 @@ text-align: center;
 	font-size:15px;
   padding: 10px;
 	text-decoration:none;
-	text-shadow:0px 1px 0px #2b665e;
+	text-shadow:0px 1px 0px #1e6053;
   align-items: center;
 
   text-align: center; /*intro full screen width*/
 }
 .button:hover {
-	background-color:#3c826b;
+	background-color:#043f33;
 }
 .button:active {
 	position:relative;
@@ -122,7 +131,7 @@ text-align: center;
 /*FOOTER STYLING*/
 footer {
   text-align: center;
-  background-color: #064F40; /*set the background color*/
+  background-color: #032f26; /*set the background color*/
   width: 100%; /*make the footer full screen width*/
   height: 125px;
   margin: 0;
