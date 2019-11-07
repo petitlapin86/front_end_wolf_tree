@@ -65,9 +65,23 @@ color: white;
 text-align: center;
 }
 
+h3 {
+  color: black;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: left;
+}
+
 p {
-color: white;
+color: #d0bcb3;
 text-align: center;
+padding: 50px;
+}
+
+ul,li {
+  list-style-type: none;
+  text-align: left;
+  color: #d0bcb3;
 }
 
 .hours{
@@ -152,7 +166,7 @@ text-align: center;
     /*---------------------------------------------------*/
     /*MENU STYLING*/
     .menu {
-      background-image: url("../images/cocktail.jpeg");
+      background-image: url("../images/hottoddy.jpeg");
       background-size: cover;
       height: 500px;
       margin: 0;
@@ -173,12 +187,54 @@ text-align: center;
         grid-column: 3; /*positioning center column*/
       }
 
-      .menu__eat:hover {
-        border-bottom: 1px solid white;
+      .menu__eat, .menu__drink {
+        font-size: 50px;
+        font-family:'Alegreya Sans';
+        color:white;
+        text-decoration: none;
       }
-      .menu__drink:hover {
-        border-bottom: 1px solid white;
+
+      .menu__eat:hover, .menu__drink:hover {
+        border-bottom: 2px solid white; /*create an underline on hover*/
       }
+
+      .drinks {
+        display: grid; /*using css grid layout*/
+        grid-template-columns: 1fr 1fr 1fr; /*create 3 column with grid*/
+        grid-template-rows: 1fr; /*create 4 rows*/
+      }
+
+      .eat {
+        align-items: center;
+        align-content: center;
+        text-align: center; /*intro full screen width*/
+        display: grid; /*using css grid layout*/
+        grid-template-columns: 1fr; /*create 3 column with grid*/
+        grid-template-rows: 1fr 1fr; /*create 4 rows*/
+
+      }
+
+      #drinks__grid--left {
+        grid-row: 1; /*positioning bottom row*/
+        grid-column: 1; /*positioning center column*/
+      }
+
+      #drinks__grid--center {
+        grid-row: 1; /*positioning bottom row*/
+        grid-column: 2; /*positioning center column*/
+      }
+
+      #drinks__grid--right {
+        grid-row: 1; /*positioning bottom row*/
+        grid-column: 3; /*positioning center column*/
+      }
+
+      #eat__grid--center {
+        grid-row: 1; /*positioning bottom row*/
+        grid-column: 1/4; /*positioning center column*/
+      }
+
+
 
       /*---------------------------------------------------*/
       /*SPOTLIGHT STYLING*/
