@@ -55,17 +55,13 @@ h1 {
 font-family: 'Alegreya Sans';
 font-size: 60px;
 color: white;
-padding-top: 10px;
 text-align: center;
 margin: 0 !important;
 }
 
 p {
-font-size: 16px;
 color: white;
 text-align: center;
-margin-left: 30px;
-margin-right: 30px;
 }
 
 /*BUTTON STYLING*/
@@ -110,8 +106,8 @@ margin-right: 30px;
   align-content: center;
   text-align: center; /*intro full screen width*/
   display: grid; /*using css grid layout*/
-  grid-template-columns: 1fr auto 1fr; /*create 1 column with grid*/
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr auto 1fr; /*create 3 column with grid*/
+  grid-template-rows: 1fr 1fr 1fr 1fr; /*create 4 rows*/
     }
 
   #intro__grid--top {
@@ -120,9 +116,8 @@ margin-right: 30px;
   }
   #intro__grid--bottom {
     grid-row: 3; /*positioning bottom row*/
-    grid-column: 2; /*positioning center column/
+    grid-column: 2; /*positioning center column*/
   }
-
 
 /*FOOTER STYLING*/
 footer {
@@ -133,4 +128,9 @@ footer {
   margin: 0;
   display: grid; /*using css grid layout*/
   grid-template-columns: 1fr; /*create 1 column with grid*/
+  grid-template-rows: 1fr 1fr 1fr; /*create 4 rows*/
+  }
+
+  #footer__grid--middle {
+    grid-row: 2;
   }
