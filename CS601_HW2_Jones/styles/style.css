@@ -46,6 +46,7 @@
   padding-left: 30px;
 }
 
+/*This is navbar social icons*/
 .navbar__social {
   width: 30px;
   height: 30px;
@@ -59,13 +60,15 @@
   background-color: #f1f3f4;
 }
 
+
+/*MUSIC STYLING*/
 .intro {
   background-image: url("../images/wolftree.jpeg");
   background-size: cover;
   height: 600px;
 }
 
-.intro__img {
+.intro__img { /*changed image from html to css*/
   border: 2px solid black;
   width: 100%;
 }
@@ -91,3 +94,14 @@
 	position:relative;
 	top:1px;
 }
+
+/*FOOTER STYLING*/
+footer {
+  text-align: center;
+  background-color: #064F40; /*set the background color*/
+  width: 100%; /*make the nav full screen width*/
+  height: 125px;
+  margin: 0;
+  display: grid; /*using css grid layout*/
+  grid-template-columns: 1fr; /*create 1 column with grid*/
+  }
