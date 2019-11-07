@@ -9,20 +9,22 @@
   text-align: center;
   background-color: #064F40; /*set the background color*/
   width: 100%; /*make the nav full screen width*/
-  height: 80px;
+  height: 125px;
   margin: 0 auto;
   display: grid; /*using css grid layout*/
   grid-template-columns: 1fr auto 1fr; /*create 3 columns with grid*/
 }
 
 /*NAVBAR GRID COLUMNS*/
-#navbar__logo { /*I thought about combining this with navbar__title but it seemed like keeping the grid seperate would be better for reusability?*/
+#navbar__grid--center { /*I thought about combining this with navbar__title but it seemed like keeping the grid seperate would be better for reusability?*/
   grid-column: 2; /*positioning centered*/
+  padding-top: 30px;
 }
 
-#navbar__menu { /*I thought about combining this with navbar__link but it seemed like keeping the grid seperate would be better for reusability?*/
+#navbar__grid--right { /*I thought about combining this with navbar__link but it seemed like keeping the grid seperate would be better for reusability?*/
   grid-column: 3; /*positioning on the right*/
-  padding-top: 35px;
+  padding: 15px;
+  text-align: right;
 }
 
 /*NAVBAR STYLING*/
@@ -32,8 +34,8 @@
   text-transform: uppercase;
   color: white;
   font-size: 40px;
-  padding-top: 20px;
   font-family: 'Raleway';
+  margin-bottom: 30px !important;
 }
 
 /*This is navbar menu items*/
@@ -41,7 +43,12 @@
   text-decoration: none; /*get rid of default blue link underline*/
   text-transform: uppercase;
   color: #d0bcb3; /*#B2A59F*/
-  padding-left: 5px;
+  padding-left: 30px;
+}
+
+.navbar__social {
+  width: 30px;
+  height: 30px;
 }
 
 /*MUSIC STYLING*/
@@ -49,7 +56,7 @@
 .music {
   border: 2px solid black;
   border-radius: 33px;
-  background-color: #eee;
+  background-color: #f1f3f4;
 }
 
 .intro {
@@ -61,4 +68,26 @@
 .intro__img {
   border: 2px solid black;
   width: 100%;
+}
+
+/*BUTTON STYLING*/
+.button {
+	box-shadow:inset 0px 1px 0px 0px #91b8b3;
+	background-color:#064f40;
+	border-radius:5px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family: "Raleway";
+	font-size:15px;
+	padding:10px 30px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2b665e;
+}
+.button:hover {
+	background-color:#3c826b;
+}
+.button:active {
+	position:relative;
+	top:1px;
 }
