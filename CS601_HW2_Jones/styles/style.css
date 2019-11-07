@@ -70,7 +70,7 @@ color: white;
 text-align: center;
 }
 
-.hours, td, tr{
+.hours{
   text-align: center;
   margin: 0 auto;
 }
@@ -148,6 +148,37 @@ text-align: center;
       grid-row: 1/3; /*fill all of right side row*/
       grid-column: 2;
     }
+
+    /*---------------------------------------------------*/
+    /*MENU STYLING*/
+    .menu {
+      background-image: url("../images/cocktail.jpeg");
+      background-size: cover;
+      height: 500px;
+      margin: 0;
+      align-items: center;
+      align-content: center;
+      text-align: center; /*intro full screen width*/
+      display: grid; /*using css grid layout*/
+      grid-template-columns: 1fr 1fr 1fr 1fr; /*create 3 column with grid*/
+      grid-template-rows: 1fr 1fr 1fr; /*create 4 rows*/
+      }
+
+      #menu__grid--left {
+        grid-row: 2; /*positioning top row*/
+        grid-column: 2; /*telling it to span full width of all columns*/
+      }
+      #menu__grid--right {
+        grid-row: 2; /*positioning bottom row*/
+        grid-column: 3; /*positioning center column*/
+      }
+
+      .menu__eat:hover {
+        border-bottom: 1px solid white;
+      }
+      .menu__drink:hover {
+        border-bottom: 1px solid white;
+      }
 
 /*---------------------------------------------------*/
 /*FOOTER STYLING*/
