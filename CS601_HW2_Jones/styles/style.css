@@ -10,7 +10,7 @@
   background-color: #064F40; /*set the background color*/
   width: 100%; /*make the nav full screen width*/
   height: 125px;
-  margin: 0 auto;
+  margin: 0;
   display: grid; /*using css grid layout*/
   grid-template-columns: 1fr auto 1fr; /*create 3 columns with grid*/
 }
@@ -35,7 +35,6 @@
   color: white;
   font-size: 40px;
   font-family: 'Raleway';
-  margin-bottom: 30px !important;
 }
 
 /*This is navbar menu items*/
@@ -52,25 +51,21 @@
   height: 30px;
 }
 
-/*MUSIC STYLING*/
-/*this will hopefully change a lot once we introduce javascript and i can make custom controls*/
-.music {
-  border: 2px solid black;
-  border-radius: 33px;
-  background-color: #f1f3f4;
+h1 {
+font-family: 'Alegreya Sans';
+font-size: 60px;
+color: white;
+padding-top: 10px;
+text-align: center;
+margin: 0 !important;
 }
 
-
-/*MUSIC STYLING*/
-.intro {
-  background-image: url("../images/wolftree.jpeg");
-  background-size: cover;
-  height: 600px;
-}
-
-.intro__img { /*changed image from html to css*/
-  border: 2px solid black;
-  width: 100%;
+p {
+font-size: 16px;
+color: white;
+text-align: center;
+margin-left: 30px;
+margin-right: 30px;
 }
 
 /*BUTTON STYLING*/
@@ -78,14 +73,16 @@
 	box-shadow:inset 0px 1px 0px 0px #91b8b3;
 	background-color:#064f40;
 	border-radius:5px;
-	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
 	font-family: "Raleway";
 	font-size:15px;
-	padding:10px 30px;
+  padding: 10px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #2b665e;
+  align-items: center;
+
+  text-align: center; /*intro full screen width*/
 }
 .button:hover {
 	background-color:#3c826b;
@@ -95,11 +92,43 @@
 	top:1px;
 }
 
+/*MUSIC STYLING*/
+/*this will hopefully change a lot once we introduce javascript and i can make custom controls*/
+.music {
+  border: 2px solid black;
+  border-radius: 33px;
+  background-color: #f1f3f4;
+}
+
+/*MUSIC STYLING*/
+.intro {
+  background-image: url("../images/ice.jpeg");
+  background-size: cover;
+  height: 500px;
+  margin: 0;
+  align-items: center;
+  align-content: center;
+  text-align: center; /*intro full screen width*/
+  display: grid; /*using css grid layout*/
+  grid-template-columns: 1fr auto 1fr; /*create 1 column with grid*/
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+
+  #intro__grid--top {
+    grid-row: 2; /*positioning top row*/
+    grid-column: 1 / 4; /*telling it to span full width of all columns*/
+  }
+  #intro__grid--bottom {
+    grid-row: 3; /*positioning bottom row*/
+    grid-column: 2; /*positioning center column/
+  }
+
+
 /*FOOTER STYLING*/
 footer {
   text-align: center;
   background-color: #064F40; /*set the background color*/
-  width: 100%; /*make the nav full screen width*/
+  width: 100%; /*make the footer full screen width*/
   height: 125px;
   margin: 0;
   display: grid; /*using css grid layout*/
