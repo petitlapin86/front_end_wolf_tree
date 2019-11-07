@@ -180,6 +180,21 @@ text-align: center;
         border-bottom: 1px solid white;
       }
 
+      /*---------------------------------------------------*/
+      /*SPOTLIGHT STYLING*/
+      .spotlight {
+        background-image: url("../images/fire.jpeg");
+        background-size: cover;
+        height: 500px;
+        margin: 0;
+        align-items: center;
+        align-content: center;
+        text-align: center; /*intro full screen width*/
+        display: grid; /*using css grid layout*/
+        grid-template-columns: 1fr 1fr 1fr 1fr; /*create 3 column with grid*/
+        grid-template-rows: 1fr 1fr 1fr; /*create 4 rows*/
+        }
+
 /*---------------------------------------------------*/
 /*FOOTER STYLING*/
 footer {
