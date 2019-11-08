@@ -258,6 +258,21 @@ ul,li {
         grid-template-rows: 1fr 1fr 1fr; /*create 4 rows*/
         }
 
+        #spotlight__grid--left {
+          grid-row: 1; /*positioning bottom row*/
+          grid-column: 1; /*positioning center column*/
+        }
+
+        #spotlight__grid--center {
+          grid-row: 1; /*positioning bottom row*/
+          grid-column: 2; /*positioning center column*/
+        }
+
+        #spotlight__grid--right {
+          grid-row: 1; /*positioning bottom row*/
+          grid-column: 3; /*positioning center column*/
+        }
+
 /*---------------------------------------------------*/
 /*FOOTER STYLING*/
 footer {
