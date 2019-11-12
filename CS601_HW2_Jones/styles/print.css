@@ -1,6 +1,21 @@
 
 @media print {
-  header nav, footer {
-  display: none;
+
+  /*create a margin for printed pages*/
+  body {
+  margin: 20px;
+  background-color: white; /*I hate when pages I print online waste color ink for a background this just ensures as I change my site that it is always printed white : )*/
   }
-}
+
+  h1, h2, h3, p {
+    color: black; /*same with text set to default black for easy readability*/
+  }
+
+  img, nav {
+    display: none; /*remove images and nav for print - this might look bland but I think its useful, most people only want to print for content (like for the menu or the address)*/
+  }
+
+  .print__only { /*This special html line will only show up for the printed version */
+    display: block;
+  }
+  }

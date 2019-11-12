@@ -90,6 +90,29 @@ ul,li {
   margin-right: 15px;
 }
 
+.li__header {
+  color: black;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: left;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.table__header {
+  color: black;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+
+}
+
 /*BUTTON STYLING*/
 .button {
 	box-shadow:inset 0px 1px 0px 0px #1e6053;
@@ -288,4 +311,10 @@ footer {
 
   #footer__grid--middle {
     grid-row: 2; /*center footer content*/
+  }
+
+
+  /*---------------------------------------------------*/
+  .print__only {
+    display: none;
   }

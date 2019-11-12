@@ -2,12 +2,14 @@
 
 <html lang="en"> <!--set language to english-->
   <head>
+    <meta charset="UTF-8">
     <title>WolfTree</title> <!--shows up in browser title bar-->
     <!--link to CSS-->
     <link rel="stylesheet" type="text/css" media="screen" href="styles/style.css">
     <link rel="stylesheet" type="text/css" media="print" href="styles/print.css">
     <!---Link to google fonts--->
-    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans|Raleway:300,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300&display=swap" rel="stylesheet">
   </head>
 
   <body>
@@ -17,7 +19,7 @@
         <a href="#" class="navbar__title">WOLF TREE</a>
         </div>
         <div id="navbar__grid--menu">
-        <a class="navbar__link" href="about.html">ABOUT</a>
+        <a class="navbar__link" href="index.html">ABOUT</a>
         <a class="navbar__link" href="menu.html">MENU</a>
         <a class="navbar__link" href="spotlight.html">SPOTLIGHT</a>
         <a class="navbar__link" href="findUs.html">FIND US</a>
@@ -38,7 +40,7 @@
 
       <section class="drinks">
         <ul id="drinks__grid--left">  <!--unfortunately without css I wasnt able to center this content without the bullet acting wierd-->
-          <h3>- Cocktails -</h3>
+          <li class="li__header">- Cocktails -</li>
           <li>Moscow Mule</li>
           <li>Pimms Cup</li>
           <li>Cucumber Gimlet</li>
@@ -48,7 +50,7 @@
           <li>Manhattan</li>
           </ul>
         <ul id="drinks__grid--center">
-          <h3>- Beer -</h3>
+          <li class="li__header">- Beer -</li>
           <li>Wild Child - The Alchemist</li>
           <li>India Pale - Sierra Nevada</li>
           <li>Prospect - Foley Brothers</li>
@@ -58,7 +60,7 @@
           <li>Cloud Drop - Upper Pass</li>
           </ul>
         <ul id="drinks__grid--right">
-        <h3>- Cider -</h3>
+        <li class="li__header">- Cider -</li>
         <li>Wild Child - The Alchemist</li>
         <li>India Pale - Sierra Nevada</li>
         <li>Prospect - Foley Brothers</li>
@@ -71,7 +73,7 @@
 
       <section class="eat">
         <ul id="eat__grid--center">
-        <h3>- Bites -</h3>
+        <li class="li__header">- Bites -</li>
         <li>Deviled Egg Trio - Traditional, Truffled, Salmon </li>
         <li>Charcuterie board - Salumi, Chorizo, Prosciutto, Pear</li>
         <li>Spiced nuts - Pistachio, Pecan, Brown sugar, Cayenne</li>
@@ -79,7 +81,7 @@
         <li>Bruschetta - Tomato Reduction base, Mozzarella, Torn Basil, Olive Oil</li>
         <li>Bavarian Pretzel - Cheddar Ale Dip, Mustard</li>
         <li>Siracha Popcorn - Tangy, Butter & Salt</li>
-        <h3>- SCRATCH-</h3>
+        <li class="li__header">- Scratch -</li>
         <li class="scratch">
         Our kitchen & bar team is small, so our menu will grow as we do!
         Either way there will be something new each week. We are committed to buying our ingredients responsibly from producers,
@@ -88,6 +90,8 @@
         </li>
         </ul>
       </section>
+
+      <p class="print__only">Menu updated on November 11 2019. Please see http://www.wolftree.com for the most recent version.</p>
 
     <footer> <!--footer-->
        <p id="footer__grid--middle">copyright	&copy; Paige Madeline Jones 2019</p>
