@@ -43,3 +43,5 @@ WEEK 2
 
 Things I would like to continue to work on:
 - The spotlight page grid was giving me some trouble - this was an extra credit page I created from last week and I will continue working on its layout tomorrow after submission deadline.
+
+WEEK 3
