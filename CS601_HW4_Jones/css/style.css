@@ -18,6 +18,7 @@
 .form__title {
   color: #d0bcb3; /*heading color*/
   text-transform: uppercase;
+  font-size: 30px;
 }
 
 /*HEADINGS*/
