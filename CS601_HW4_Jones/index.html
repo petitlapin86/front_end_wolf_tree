@@ -17,16 +17,20 @@
     <fieldset>
     <!--FORM TITLE-->
     <legend class="form__title">Tell Us What You Think</legend>
+
     <!--FORM FIELDS-->
+    <section class="form__section">
     <label for="firstName" class="form__h2">First Name:
     <input type="text" id="firstName" required></label>
     <label for="lastName" class="form__h2">Last Name:
     <input type="text" id="lastName" required></label>
-    <label for="facilitator" class="form__h2">Facilitator: 
+    <label for="facilitator" class="form__h2">Facilitator:
     <input type="text" id="facilitator" required></label>
+    </section>
 
-    <br><br>
+
     <!--Checkboxes-->
+    <section class="form__section">
     <label class="form__h2">What is your favorite type of drink to order out?</label>
     <label class="input"><input type="checkbox"> Beer</label>
     <label class="input"><input type="checkbox"> Cocktail</label>
@@ -35,18 +39,19 @@
     <label class="input"><input type="checkbox"> White Wine</label>
     <label class="input"><input type="checkbox"> Champagne</label>
     <label class="input"><input type="checkbox"> Non-alcoholic</label>
+    </section>
 
-    <br><br>
     <!--Radio Buttons-->
+    <section class="form__section">
     <label for="" class="form__h2">What kind of themes interest you most in a drink menu?</label>
     <label class="input"><input type="radio" name="" value="seasonal" id=""> Holiday/Seasonal</label>
     <label class="input"><input type="radio" name="" value="seasonal" id=""> Tropical</label>
     <label class="input"><input type="radio" name="" value="seasonal" id=""> Local Ingredients</label>
     <label class="input"><input type="radio" name="" value="seasonal" id=""> Tasting Flights</label>
+    </section>
 
-    <br><br>
     <!--SUBMIT-->
-    <input type="submit" value="Send">
+    <label><input type="submit" value="Send" class="form__button"></label>
     </fieldset>
   </form>
 
