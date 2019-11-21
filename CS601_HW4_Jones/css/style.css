@@ -1,0 +1,39 @@
+.form {
+  background-color: #032f26;
+  width: 50%;
+}
+
+.form__title {
+  color: #d0bcb3; /*heading color*/
+  text-transform: uppercase;
+}
+
+label {
+  color: white;
+  color: #d0bcb3;
+  font-size: 18px;
+  padding-top: 5px; /*spacing the content*/
+  padding-bottom: 5px; /*spacing the content*/
+  display: block;   /*This tells each label to go on a new line */
+}
+
+.input {
+  color: pink; /*Just the radio button and checkbox choices should be a different color*/
+}
+
+
+
+
+/*BUTTON STYLING*/
+button {
+	box-shadow:inset 0px 1px 0px 0px #1e6053;
+	background-color:#043f33;
+	border-radius:5px;
+	cursor:pointer;
+	color:white;
+	font-size:15px;
+  padding: 10px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #1e6053;
+  text-align: center;
+}

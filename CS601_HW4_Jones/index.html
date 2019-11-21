@@ -11,12 +11,12 @@
 
   <body>
 
-  <section>
+  <section class="form">
   <!--THE FORM-->
-  <form action="">
+  <form action="post">
     <fieldset>
     <!--FORM TITLE-->
-    <legend>My Form</legend>
+    <legend class="form__title">My Form</legend>
     <!--FORM FIELDS-->
     <label for="firstName">First Name:</label>
     <input type="text" id="firstName" name="FirstyNamey" required>
@@ -26,20 +26,24 @@
     <input type="text" id="facilitator" name="Facilily" required>
 
     <br><br>
-    <!--FORM FIELDS-->
+    <!--Checkboxes-->
     <label for="">What is your favorite type of drink to order out?</label>
-    <label><input type="checkbox">Beer</label>
-    <label><input type="checkbox">Cocktail</label>
-    <label><input type="checkbox">Red Wine</label>
-    <label><input type="checkbox">Rose</label>
-    <label><input type="checkbox">White Wine</label>
-    <label><input type="checkbox">Champagne</label>
-    <label><input type="checkbox">Non-alcoholic</label>
+    <label class="input"><input type="checkbox">Beer</label>
+    <label class="input"><input type="checkbox">Cocktail</label>
+    <label class="input"><input type="checkbox">Red Wine</label>
+    <label class="input"><input type="checkbox">Rose</label>
+    <label class="input"><input type="checkbox">White Wine</label>
+    <label class="input"><input type="checkbox">Champagne</label>
+    <label class="input"><input type="checkbox">Non-alcoholic</label>
 
     <br><br>
+    <!--Radio Buttons-->
+    <label for="">What kind of themes interest you most in a drink menu?</label>
+    <label class="input"><input type="radio" name="" value="seasonal" id="">Holiday/Seasonal</label>
+    <label class="input"><input type="radio" name="" value="seasonal" id="">Tropical</label>
+    <label class="input"><input type="radio" name="" value="seasonal" id="">Local Ingredients</label>
+    <label class="input"><input type="radio" name="" value="seasonal" id="">Tasting Flights</label>
 
-
-    
     <br><br>
     <!--SUBMIT-->
     <input type="submit" value="Send">
