@@ -11,9 +11,10 @@
 
   <body>
 
+<div class="form__container">
   <section class="form">
   <!--THE FORM-->
-  <form method="post" action="/phpgoeshere">
+  <form method="post" action="http://bucs601.com/submit.php">
     <fieldset>
     <!--FORM TITLE-->
     <legend class="form__title">Tell Us What You Think</legend>
@@ -21,48 +22,46 @@
     <!--FORM FIELDS-->
     <section class="form__section">
     <label for="firstName" class="form__h2">First Name:
-    <input type="text" id="firstName" required></label>
+    <input type="text" id="firstName" name="firstName" pattern="[A-Za-z]{2,}" required></label>
     <label for="lastName" class="form__h2">Last Name:
-    <input type="text" id="lastName" required></label>
+    <input type="text" id="lastName" name="lastName" pattern="[A-Za-z]{2,}" required></label>
     <label for="facilitator" class="form__h2">Facilitator:
-    <input type="text" id="facilitator" required></label>
+    <input type="text" id="facilitator" name="facilitator" pattern="Josh|Harsh|Laura" required></label>
     </section>
 
 
     <!--Checkboxes-->
     <section class="form__section">
     <label class="form__h2">What is your favorite type of drink to order out?</label>
-    <label class="input"><input type="checkbox"> Beer</label>
-    <label class="input"><input type="checkbox"> Cocktail</label>
-    <label class="input"><input type="checkbox"> Red Wine</label>
-    <label class="input"><input type="checkbox"> Rosé</label>
-    <label class="input"><input type="checkbox"> White Wine</label>
-    <label class="input"><input type="checkbox"> Champagne</label>
-    <label class="input"><input type="checkbox"> Non-Alcoholic</label>
+    <label class="input"><input type="checkbox" name="beer"> Beer</label>
+    <label class="input"><input type="checkbox" name="cocktail"> Cocktail</label>
+    <label class="input"><input type="checkbox" name="red"> Red Wine</label>
+    <label class="input"><input type="checkbox" name="rose"> Rosé</label>
+    <label class="input"><input type="checkbox" name="white"> White Wine</label>
+    <label class="input"><input type="checkbox" name="champagne"> Champagne</label>
+    <label class="input"><input type="checkbox" name="nonAlocohic"> Non-Alcoholic</label>
     </section>
 
     <!--Radio Buttons-->
     <section class="form__section">
     <label for="" class="form__h2">What kind of themes interest you most in a drink menu?</label>
-    <label class="input"><input type="radio" name="" value="seasonal" id=""> Holiday/Seasonal</label>
-    <label class="input"><input type="radio" name="" value="seasonal" id=""> Tropical</label>
-    <label class="input"><input type="radio" name="" value="seasonal" id=""> Local Ingredients</label>
-    <label class="input"><input type="radio" name="" value="seasonal" id=""> Tasting Flights</label>
+    <label class="input"><input type="radio" name="seasonal" value="seasonal" id=""> Holiday/Seasonal</label>
+    <label class="input"><input type="radio" name="tropical" value="seasonal" id=""> Tropical</label>
+    <label class="input"><input type="radio" name="local" value="seasonal" id=""> Local Ingredients</label>
+    <label class="input"><input type="radio" name="tasting" value="seasonal" id=""> Tasting Flights</label>
     </section>
 
     <section class="form__section">
-      <div class="bio">
-        <label class="form__h2" for="bio">If we designed a cocktail to describe you what would be in it?
-        <textarea name="bio" id="bio" cols="30" rows="10"></textarea></label>
-      </div>
+        <label class="form__h2">If we designed a cocktail to describe you what would be in it?</label>
+        <label><textarea name="bio" id="bio" cols="80" rows="5"></textarea></label>
     </section>
 
     <!--SUBMIT-->
-    <label><input type="submit" value="Send" class="form__button"></label>
+    <label><input type="submit" value="submit" id="submit" class="form__button"></label>
     </fieldset>
   </form>
-
   </section>
+  </div>
 
   </body>
 </html>
