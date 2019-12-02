@@ -16,7 +16,7 @@ function validateInput(checkInput) {
 }
 
 // Validation functions should only occur after the user clicks on the submit button
-BTN.onclick = function(){
+BTN.onclick = fun ction(){
     // Remove any pre-existing error messages
     let errors = document.getElementsByClassName("errorMessage");
     while(errors.length > 0){

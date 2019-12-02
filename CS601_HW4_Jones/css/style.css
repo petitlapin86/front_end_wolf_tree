@@ -5,7 +5,7 @@ body, html {
 
 /*ENTIRE FORM*/
 .form__container {
-  background-image: url("../img/creationDrink.jpeg");
+  background-image: url("../img/cocktail.jpeg");
   min-height: 900px;
   background-position: center;
   background-repeat: no-repeat;
@@ -69,3 +69,10 @@ label {
   text-align: center;
 
 }
+
+/*Once the user has entered the correct input the formfield will change color*/
+input:valid {
+  background-color: #e7b5ac;
+}
+/*I had invalid styling as well - but I chose to take it out because as a user I
+find it aggressive to change an angry color especially when there are messages as well: ) */
