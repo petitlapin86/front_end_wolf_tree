@@ -10,6 +10,10 @@
   <!---Link to google fonts-->
   <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Raleway:300&display=swap" rel="stylesheet">
+  <!---Link to javascript-->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/main.js"></script>
 </head>
 
   <body>
@@ -19,6 +23,9 @@
         <div id="navbar__grid--title">
         <a href="#" class="navbar__title">WOLF TREE</a>
         </div>
+
+
+
         <div id="navbar__grid--menu">
         <a class="navbar__link" href="index.html">ABOUT</a>
         <a class="navbar__link" href="menu.html">MENU</a>
@@ -26,15 +33,34 @@
         <a class="navbar__link" href="findUs.html">FIND US</a>
         </div>
 
+        <!--ALERT BUTTON-->
+        <div class="main-content" id="navbar__grid--right">
+        <p><a class="show-popup" href="#" data-showpopup="1"> <!--popup link opens on click of image-->
+        <img class="img__newyears" src="/images/NYEbadge.png" alt="art deco new years eve promo">
+        </a>
+        </p>
+
+        <div class="overlay-bg"> <!--gray out background when pop up is open-->
+        </div>
+        <div class="overlay-content popup1">
+          <button class="close-btn">x</button>  <!--close button closes on click see main.js-->
+          <br><br><br><br><br><br><br><br><br><br> <!--this is not ideal but im having issues with the box collapsing cutting off the image-->
+          <a class="button" href="#" type='button'>BUY TICKETS NOW!</a> <!--button to no where just for example-->
+          <br><br>
+        </div>
+        </div>
+
+        <!--SOCIAL ICON GOING TO MOVE TO FOOTER
         <div id="navbar__grid--right">
         <a href="https://www.instagram.com/wolftreevt/">
           <img class="navbar__social" src="images/instagram.png" alt="instagram logo">
         </a>
-        </div>
+      </div>--->
       </nav>
     </header>
 
     <section class="intro">
+
       <h1 id="intro__grid--top">The New Bar In Town</h1>
       <a class="button" id="intro__grid--bottom" href="#">ORIGIN STORY</a>  <!--using a link for click to call-->
       <!--paragraph 1 this is not coded to work yet as I think javascript will be needed to create a popup box that isnt a whole new page
@@ -52,17 +78,10 @@
     <audio controls src="audio/TheGame.mp3"></audio>
     </section>
 
-    <footer> <!--footer-->
-       <p id="footer__grid--middle">copyright	&copy; Paige Madeline Jones 2019</p>
-    </footer>
+<!--footer-->
+<footer>
+   <p id="footer__grid--middle">copyright	&copy; Paige Madeline Jones 2019</p>
+</footer>
 
-
-<div class="popup">
-  <div class="wheel-popup first-child">
-    <br><br><br><br><br><br><br><br><br><br><br><br>
-<a class="button" href="#">BUY TICKETS NOW!</a>
-</div>
-<span class="boxzilla-close-icon">×</span>
-</div>
   </body>
 </html>
