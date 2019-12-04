@@ -65,6 +65,14 @@ color: white;
 text-align: center;
 }
 
+h2 {
+  font-family: 'Raleway';
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  }
+}
+
 h3 {
   color: black;
   font-size: 20px;
@@ -314,6 +322,33 @@ footer {
   }
 
 
+/*---------------------------------------------------*/
+/*POPUP STYLING*/
+.popup {
+  position: fixed;
+  z-index: 12000;  /*telling popup to be in front of everything else*/
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-image: url(/images/newnewyear.png); /*pop up background image*/
+  background-repeat: no-repeat;
+  padding: 25px;
+  border: 6px solid #d0bcb3; /*pop up border*/
+  border-radius: 20px; /*round corners of border*/
+  background-size: 100% auto;
+  padding: 25px 35px 50px;
+  position: relative;
+  max-width: 570px;
+  width: 80%;
+  overflow: hidden!important;
+
+  display: inline-block;
+  text-align: right;
+  position: relative;
+}
+
+
+  /*PRINT STYLING IGNORED FOR SCREENS*/
   /*---------------------------------------------------*/
   .print__only {
     display: none;
