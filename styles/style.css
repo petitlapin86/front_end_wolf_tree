@@ -399,6 +399,86 @@ footer {
 		background:#043f33;
 	}
 
+
+
+
+/*NEWSLETTER STYLING*/
+/*---------------------------------------------------*/
+
+/*ENTIRE FORM*/
+.form__container {
+  background-image: url("/images/cocktail.jpeg");
+  min-height: 900px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.form {
+  background-color: #032f26;
+  width: 550px;
+  margin: 20px; /*creates a little space around the whole content*/
+  padding: 20px;
+  position: absolute;
+  left: 0;
+}
+
+/*EACH FORM SECTION*/
+.form__section {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+/*TITLE*/
+.form__title {
+  color: #d0bcb3; /*heading color*/
+  text-transform: uppercase;
+  font-size: 25px;
+}
+
+/*HEADINGS*/
+.form__h2 {
+  color: #e7b5ac;
+  font-size: 18px;
+}
+
+/*ALL FORM LABELS*/
+label {
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: block;   /*This tells each label to go on a new line */
+}
+
+/*ONLY INPUT LABELS*/
+.input {
+  color: #f9e0db; /*Just the radio button and checkbox choices should be a different color*/
+  font-size: 16px; /*and a slightly smaller size*/
+}
+
+/*BUTTON*/
+.form__button {
+	box-shadow:inset 0px 1px 0px 0px #e7b5ac;
+	background-color: #f9e0db;
+	border-radius:5px;
+	cursor:pointer;
+	color:white;
+	font-size:16px;
+  padding: 10px;
+	text-decoration: none;
+	text-shadow:0px 1px 0px  #e7b5ac;
+  text-align: center;
+
+}
+
+/*Once the user has entered the correct input the formfield will change color*/
+input:valid {
+  background-color: #e7b5ac;
+}
+/*I had invalid styling as well - but I chose to take it out because as a user I
+find it aggressive to change an angry color especially when there are messages as well: ) */
+
   /*PRINT STYLING IGNORED FOR SCREENS*/
   /*---------------------------------------------------*/
   .print__only {
