@@ -65,6 +65,9 @@
   width: 250px;
 }
 
+.img__leaf {
+  width: 25px;
+}
 /*---------------------------------------------------*/
 /*COMMON STYLES THROUGHOUT*/
 h1 {
@@ -99,6 +102,20 @@ color: white;
 text-align: center;
 padding: 40px;/*adding padding so the left justified content is centered*/
 line-height: 30px;
+font-size: 15px;
+font-family: "Poiret One";
+text-transform: uppercase;
+
+}
+
+#footer__link{ /*mimicing p styles above for links*/
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  line-height: 30px;
+  font-size: 15px;
+  font-family: "Poiret One";
+  text-transform: uppercase;
 }
 
 /*LIST ITEM STYLING*/
