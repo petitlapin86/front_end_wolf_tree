@@ -69,7 +69,7 @@
 /*---------------------------------------------------*/
 /*COMMON STYLES THROUGHOUT*/
 h1 {
-font-family: 'Alegreya Sans';
+font-family: 'Raleway';
 font-size: 60px;
 color: white;
 text-align: center;
@@ -92,7 +92,21 @@ h3 {
 }
 
 h4 {
-  color: pink;
+  color: #d0bcb3;
+  font-family: "Poiret One";
+  font-size: 30px;
+  padding: 20px;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+h5 {
+  color: #d0bcb3;
+  font-family: "Poiret One";
+  font-size: 20px;
+  padding-left: 3em;
+  padding-right: 3em;
+  text-align: left;
 }
 
 p {
@@ -103,7 +117,6 @@ line-height: 30px;
 font-size: 15px;
 font-family: "Poiret One";
 text-transform: uppercase;
-
 }
 
 #footer__link{ /*mimicing p styles above for links*/
