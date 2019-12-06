@@ -81,14 +81,13 @@ h2 {
   color: white;
   text-align: center;
   }
-}
+
 
 h3 {
   color: black;
   font-size: 20px;
-  text-transform: uppercase;
-  text-align: left;
-  margin-left: 25px;
+  text-align: center;
+  padding: 25px;
 }
 
 h4 {
@@ -206,7 +205,7 @@ ul,li {
 .intro {
   background-image: url("../images/ice.jpeg");
   background-size: cover;
-  height: 500px;
+  height: 608px;
   margin: 0;
   align-items: center;
   align-content: center;
@@ -262,7 +261,7 @@ ul,li {
     .menu {
       background-image: url("../images/hottoddy.jpeg");
       background-size: cover;
-      height: 500px;
+      height: 608px;
       margin: 0;
       align-items: center;
       align-content: center;
@@ -377,7 +376,7 @@ ul,li {
       .spotlight {
         background-image: url("../images/fire.jpeg");
         background-size: cover;
-        height: 500px;
+        height: 608px;
         margin: 0;
         align-items: center;
         align-content: center;
