@@ -129,7 +129,7 @@ text-transform: uppercase;
   text-transform: uppercase;
 }
 
-#spotlight__link, #jsonOnClick {
+#spotlight__link, #jsonOnClick { /*applying this style to two different ids on different pages*/
   text-decoration: none;
   color:#d0bcb3;;
   text-align: center;
@@ -140,12 +140,12 @@ text-transform: uppercase;
   padding: .5em;
 }
 
-#spotlight__link:hover, #jsonOnClick:hover {
+#spotlight__link:hover, #jsonOnClick:hover { /*flip the colors on hover so user knows its a button*/
 	background-color:#d0bcb3;
   color: white;
 }
 
-#spotlight__link:focus, #jsonOnClick:focus {
+#spotlight__link:focus, #jsonOnClick:focus { /*this removes chrome default blue outline on focus*/
   outline: 0;
 }
 
@@ -308,7 +308,6 @@ ul,li {
         display: grid; /*using css grid layout*/
         grid-template-columns: 1fr; /*create 3 column with grid*/
         grid-template-rows: 1fr; /*create 1 rows*/
-
       }
 
       #drinks__grid--left {
@@ -333,6 +332,7 @@ ul,li {
 
       .scratch {
         line-height: 30px; /*adding line height so it matches the li items above it*/
+        padding-bottom: 1em;
       }
 
       /*MENU PHOTO GALLERY STYLING*/
