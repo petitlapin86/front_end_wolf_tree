@@ -1,0 +1,31 @@
+{
+  "purveyors": [
+    {
+    "Company": "King Arthur Flour",
+    "Location": "Norwich, VT",
+    "Item": "Bread"
+  },
+  {
+    "Company": "Luna Bleu",
+    "Location": "SoRo, VT",
+    "Item": "Cheese, Milk, Eggs, Produce"
+  },
+  {
+    "Company": "Stitchdown Farms",
+    "Location": "Pomfret, VT",
+    "Item": "Flowers"
+  },
+  {
+     "Company": "Abracadabra",
+     "Location": "Woodstock, VT",
+     "Item": "Coffee"
+
+   },
+   {
+      "Company": "Jasper Hill Farm",
+      "Location": "Greensboro, VT",
+      "Item": "Meat & Cheese"
+    }
+
+  ]
+}

@@ -129,7 +129,7 @@ text-transform: uppercase;
   text-transform: uppercase;
 }
 
-#spotlight__link {
+#spotlight__link, #jsonOnClick {
   text-decoration: none;
   color:#d0bcb3;;
   text-align: center;
@@ -140,9 +140,13 @@ text-transform: uppercase;
   padding: .5em;
 }
 
-#spotlight__link:hover {
+#spotlight__link:hover, #jsonOnClick:hover {
 	background-color:#d0bcb3;
   color: white;
+}
+
+#spotlight__link:focus, #jsonOnClick:focus {
+  outline: 0;
 }
 
 /*LIST ITEM STYLING*/
