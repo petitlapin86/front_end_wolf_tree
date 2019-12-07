@@ -1,4 +1,6 @@
 
+window.onload=function(){
+
 // JAVASCRIPT FUNCTIONALITY TO SHOW POPUP ON NYE BADGE CLICK (INDEX PAGE LINE 36)
 $(document).ready(function(){
     function showPopup(whichpopup){
@@ -25,9 +27,6 @@ $(document).ready(function(){
         }
     });
 });
-
-
-window.onload=function(){
 
 //FUNCTIONALITY TO SHOW JSON DATA ON BUTTON CLICK (MENU PAGE LINE 88)
 const btn = document.getElementById('jsonOnClick'); //create a variable for the html button
@@ -67,5 +66,4 @@ const getDegreeData = () => {
 };
 
 btn.addEventListener('click', getDegreeData); //listen for users click of the button
-
 }
