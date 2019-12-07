@@ -129,7 +129,7 @@ text-transform: uppercase;
   text-transform: uppercase;
 }
 
-#spotlight__link, #jsonOnClick { /*applying this style to two different ids on different pages*/
+#spotlight__link, #jsonOnClick, #call__us { /*applying this style to two different ids on different pages*/
   text-decoration: none;
   color:#d0bcb3;;
   text-align: center;
@@ -140,12 +140,12 @@ text-transform: uppercase;
   padding: .5em;
 }
 
-#spotlight__link:hover, #jsonOnClick:hover { /*flip the colors on hover so user knows its a button*/
+#spotlight__link:hover, #jsonOnClick:hover, #call__us:hover { /*flip the colors on hover so user knows its a button*/
 	background-color:#d0bcb3;
   color: white;
 }
 
-#spotlight__link:focus, #jsonOnClick:focus { /*this removes chrome default blue outline on focus*/
+#spotlight__link:focus, #jsonOnClick:focus, #call__us:focus { /*this removes chrome default blue outline on focus*/
   outline: 0;
 }
 
@@ -376,7 +376,7 @@ ul,li {
           display: block; }
 
       /*---------------------------------------------------*/
-      /*SPOTLIGHT STYLING*/
+      /*SPOTLIGHT HEADING STYLING*/
       .spotlight {
         background-image: url("../images/fire.jpeg");
         background-size: cover;
@@ -405,7 +405,8 @@ ul,li {
           grid-column: 3; /*positioning center column*/
         }
 
-        .locals__and__events {
+        /*SPOTLIGHT MAIN STYLING & FIND US MAIN STYLING*/
+        .split__screen {
           margin: 0;
           text-align: center; /*intro full screen width*/
           display: grid; /*using css grid layout*/
@@ -413,35 +414,35 @@ ul,li {
           grid-template-rows: 1fr 1fr 1fr 1fr; /*create 4 rows*/
           }
 
-          #locals__and__events--1--left {
+          #split__screen--1--left {
             grid-row: 1;
             grid-column: 1;
           }
-          #locals__and__events--1--right {
+          #split__screen--1--right {
             grid-row: 1;
             grid-column: 2;
           }
-          #locals__and__events--2--left {
+          #split__screen--2--left {
             grid-row: 2;
             grid-column: 1;
           }
-          #locals__and__events--2--right {
+          #split__screen--2--right {
             grid-row: 2;
             grid-column: 2;
           }
-          #locals__and__events--3--left {
+          #split__screen--3--left {
             grid-row: 3;
             grid-column: 1;
           }
-          #locals__and__events--3--right {
+          #split__screen--3--right {
             grid-row: 3;
             grid-column: 2;
           }
-          #locals__and__events--4--left {
+          #split__screen--4--left {
             grid-row: 4;
             grid-column: 1;
           }
-          #locals__and__events--4--right {
+          #split__screen--4--right {
             grid-row: 4;
             grid-column: 2;
           }
