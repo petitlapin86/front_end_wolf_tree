@@ -95,6 +95,7 @@ h4 {
   font-family: "Poiret One";
   font-size: 30px;
   padding: 20px;
+  margin: 5%;
   text-decoration: underline;
   text-transform: uppercase;
 }
@@ -105,8 +106,22 @@ h5 {
   font-size: 20px;
   padding-left: 3em;
   padding-right: 3em;
-  padding-bottom: 1em;
   text-align: left;
+}
+
+table, address {
+  color: #d0bcb3;
+  font-family: "Poiret One";
+  font-size: 20px;
+  padding-left: 3em;
+  padding-right: 3em;
+  text-align: left;
+  font-style: normal; /*this gets rid of default italic on the address attribute*/
+}
+
+td {
+  padding-right: 40px;
+  font-family: 'Poiret One';
 }
 
 p {
@@ -129,7 +144,7 @@ text-transform: uppercase;
   text-transform: uppercase;
 }
 
-#spotlight__link, #jsonOnClick, #call__us { /*applying this style to two different ids on different pages*/
+#spotlight__link, #jsonOnClick, #call__us { /*applying this style to three different ids on different pages*/
   text-decoration: none;
   color:#d0bcb3;;
   text-align: center;
@@ -179,8 +194,8 @@ ul,li {
   align-items: center;
   align-self: center;
   align-content: center;
-
 }
+
 
 /*BUTTON STYLING*/
 .button {
@@ -236,29 +251,6 @@ ul,li {
     border-radius: 33px;
     background-color: #f1f3f4;
   }
-
-  /*---------------------------------------------------*/
-  /*FIND US STYLING*/
-  .findUs {
-    text-align: center;
-    margin: 0;
-    display: grid; /*using css grid layout*/
-    grid-template-columns: 1fr 1fr; /*create 1 column with grid*/
-    grid-template-rows: 1fr 1fr; /*create 4 rows*/
-    }
-
-    #findUs__grid--left {
-      grid-row: 1/3; /*fill all of left side row*/
-      grid-column: 1;
-    }
-    #findUs__grid--right {
-      grid-row: 1/3; /*fill all of right side row*/
-      grid-column: 2;
-    }
-    .hours{
-      text-align: center;
-      margin: 0 auto;
-    }
 
     /*---------------------------------------------------*/
     /*MENU STYLING*/
@@ -405,7 +397,7 @@ ul,li {
           grid-column: 3; /*positioning center column*/
         }
 
-        /*SPOTLIGHT MAIN STYLING & FIND US MAIN STYLING*/
+        /*SPOTLIGHT CONTENT STYLING*/
         .split__screen {
           margin: 0;
           text-align: center; /*intro full screen width*/
@@ -444,6 +436,25 @@ ul,li {
           }
           #split__screen--4--right {
             grid-row: 4;
+            grid-column: 2;
+          }
+
+/*---------------------------------------------------*/
+        /*FIND US  CONTENT STYLING*/
+        .find__us {
+          margin: 0;
+          text-align: center; /*intro full screen width*/
+          display: grid; /*using css grid layout*/
+          grid-template-columns: 1fr 1fr; /*create 2 column with grid*/
+          grid-template-rows: 1fr; /*create 4 rows*/
+          }
+
+          #findUs--left {
+            grid-row: 1;
+            grid-column: 1;
+          }
+          #findUs--right {
+            grid-row: 1;
             grid-column: 2;
           }
 /*---------------------------------------------------*/
