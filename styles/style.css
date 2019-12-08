@@ -248,9 +248,12 @@ text-shadow: white;
   /*MUSIC STYLING*/
   /*this will hopefully change a lot once we introduce javascript and i can make custom controls*/
   .music {
-    border: 2px solid black;
+    border: 2px solid #d0bcb3;
     border-radius: 33px;
     background-color: #f1f3f4;
+    width: 300px;
+    padding: 20px;
+    margin: 5%;
   }
 
     /*---------------------------------------------------*/
