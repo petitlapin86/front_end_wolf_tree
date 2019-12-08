@@ -528,7 +528,7 @@ footer {
 /*ENTIRE FORM*/
 .form__container {
   background-image: url("/images/cocktail.jpeg");
-  min-height: 900px;
+  min-height: 1000px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
