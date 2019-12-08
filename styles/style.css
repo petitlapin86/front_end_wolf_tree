@@ -161,7 +161,7 @@ text-transform: uppercase;
   color: white;
 }
 
-#spotlight__link:focus, #jsonOnClick:focus, #call__us:focus { /*this removes chrome default blue outline on focus*/
+#spotlight__link:focus, #jsonOnClick:focus, #call__us:focus, audio:focus{ /*this removes chrome default blue outline on focus*/
   outline: 0;
 }
 
@@ -254,6 +254,7 @@ text-shadow: white;
     width: 300px;
     padding: 20px;
     margin: 5%;
+
   }
 
     /*---------------------------------------------------*/
