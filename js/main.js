@@ -1,23 +1,23 @@
 
 window.onload=function(){ //onload fires when the document's window is ready for presentation and document.
 
-// JAVASCRIPT FUNCTIONALITY TO SHOW POPUP ON NYE BADGE CLICK (INDEX PAGE LINE 36)
-$(document).ready(function(){
-    function showPopup(whichpopup){
-     var docHeight = $(document).height();
-     var scrollTop = $(window).scrollTop();
-     $('.overlay-bg').show().css({'height' : docHeight});
-     $('.popup'+whichpopup).show().css({'top': scrollTop+20+'px'});
+// JAVASCRIPT/JQUERY FUNCTIONALITY TO SHOW POPUP ON NYE BADGE CLICK (INDEX PAGE LINE 36)
+$(document).ready(function(){ //jquery detects pages ready state
+    function showPopup(mypopup){
+     var documentHeight = $(document).height(); //get the screens height
+     var scrollTop = $(window).scrollTop(); //get the screens scroll position
+     $('.overlay-bg').show().css({'height' : documentHeight}); //set the overlay to cover the screen
+     $('.popup'+mypopup).show().css({'top': scrollTop+20+'px'}); //set the popup position to the top of the page
     }
 
     // function to close popup
     function closePopup(){
         $('.overlay-bg, .overlay-content').hide();   // hide popup
     }
-    $('.show-popup').click(function(event){ //show popup
-        event.preventDefault();
-        var selectedPopup = $(this).data('showpopup');
-        showPopup(selectedPopup);
+    $('.show-popup').click(function(event){ //show popup show--popup is the class in the html
+        event.preventDefault(); //default action will not be triggered
+        var selectedPopup = $(this).data('showpopup'); //store the data into a new variable
+        showPopup(selectedPopup); //and now call the show popup function with that data as an argument
     });
     $('.close-btn, .overlay-bg').click(function(){
         closePopup();
@@ -66,4 +66,33 @@ const getPurveryorData = () => {
 };
 
 btn.addEventListener('click', getPurveryorData); //listen for users click of the button
-}
+
+
+
+//NEWSLETTER FORM VALIDITY FUNCTIONS
+//CUSTOM ERROR MESSAGES IN JS
+  const first = document.getElementById("firstName");
+  const email = document.getElementById("email");
+
+//FIRST NAME
+//LET USER KNOW THAT NUMBERS and SYMBOLS ARE NOT ACCEPTED + length requirement
+  first.addEventListener("input", e => {
+    if (first.validity.patternMismatch) { //using validity state
+      first.setCustomValidity("Please enter at least 2 characters and only alphabet characters!");
+    } else {
+      first.setCustomValidity("");
+    }
+  });
+
+//EMAIL
+//LET USER KNOW EMAIL FORMAT REQUIREMENT
+  email.addEventListener("input", e => {
+    if (email.validity.patternMismatch) {
+      email.setCustomValidity("Please enter your email in the correct format");
+    } else {
+      email.setCustomValidity("");
+    }
+  });
+
+
+};
