@@ -500,7 +500,7 @@ footer {
     border-radius: 25px; /*round corners of border*/
     background-size: 100% auto; /*this refers to the image size within the content*/
 		padding: 2% 2% 4% 0; /*custom padding to display content nicely*/
-		width: 40%; /*this refers to overall page for the popup to cover*/
+		width: 45%; /*this refers to overall page for the popup to cover*/
 		position: absolute;
 		top: 15%;
 		left: 50%;
