@@ -67,6 +67,7 @@ WEEK 6
 UPDATES AFTER LIVE REVIEW:
 - change taupe color to a darker shade for easier readability
 - compress all images in photoshop for web
+- validate all HTML PAGES and ALL CSS
 
 THINGS I WOULD LIKE TO ADD IF I WERE TO CONTINUE ON THIS PROJECT:
 - I would like to learn media queries and make it fully responsive

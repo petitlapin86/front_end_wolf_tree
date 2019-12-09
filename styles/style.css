@@ -56,7 +56,8 @@
 }
 
 .img__newyears {
-  height: 150px;;
+  height: 150px !important; /*Using this to override the 100% width on all other images in the site so this badge doesnt get distorted*/
+  width: 150px !important;
 }
 
 .img__logo {
@@ -125,7 +126,7 @@ td {
   font-family: 'Poiret One';
 }
 
-p {
+p, .footer__style {
 color: white;
 text-align: center;
 padding: 40px;/*adding padding so the left justified content is centered*/
@@ -135,7 +136,9 @@ font-family: "Poiret One";
 text-transform: uppercase;
 }
 
-#footer__link{ /*mimicing p styles above for links*/
+
+
+#footer__insta, #footer__newsletter{ /*mimicing p styles above for links*/
   text-decoration: none;
   color: white;
   text-align: center;
@@ -145,7 +148,7 @@ text-transform: uppercase;
   text-transform: uppercase;
 }
 
-#spotlight__link, #jsonOnClick, #call__us { /*applying this style to three different ids on different pages*/
+.spotlight__link, #jsonOnClick, #call__us { /*applying this style to three different ids on different pages*/
   text-decoration: none;
   color:#bba9a1;
   text-align: center;
@@ -156,12 +159,12 @@ text-transform: uppercase;
   padding: .5em;
 }
 
-#spotlight__link:hover, #jsonOnClick:hover, #call__us:hover { /*flip the colors on hover so user knows its a button*/
+.spotlight__link:hover, #jsonOnClick:hover, #call__us:hover { /*flip the colors on hover so user knows its a button*/
 	background-color:#bba9a1;
   color: white;
 }
 
-#spotlight__link:focus, #jsonOnClick:focus, #call__us:focus, audio:focus{ /*this removes chrome default blue outline on focus*/
+.spotlight__link:focus, #jsonOnClick:focus, #call__us:focus, audio:focus{ /*this removes chrome default blue outline on focus*/
   outline: 0;
 }
 
@@ -208,7 +211,6 @@ font-family: "Poiret One";
 text-transform: uppercase;
 background-color:#032f26;
 padding: .5em;
-text-shadow: white;
 }
 
 .button:hover {
@@ -462,6 +464,10 @@ text-shadow: white;
             grid-row: 1;
             grid-column: 2;
           }
+
+          img {
+            width: 100%;
+          }
 /*---------------------------------------------------*/
 /*FOOTER STYLING*/
 footer {
@@ -556,7 +562,7 @@ footer {
 
 /*TITLE*/
 .form__title {
-  color: #bba9a1 /*heading color*/
+  color: #bba9a1; /*heading color*/
   text-transform: uppercase;
   font-size: 25px;
 }
