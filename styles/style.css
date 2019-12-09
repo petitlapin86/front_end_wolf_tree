@@ -157,7 +157,7 @@ text-transform: uppercase;
 }
 
 #spotlight__link:hover, #jsonOnClick:hover, #call__us:hover { /*flip the colors on hover so user knows its a button*/
-	background-color:#bba9a1
+	background-color:#bba9a1;
   color: white;
 }
 
@@ -212,7 +212,7 @@ text-shadow: white;
 }
 
 .button:hover {
-	background-color:#bba9a1
+	background-color:#bba9a1;
   color: white;
 
 }
