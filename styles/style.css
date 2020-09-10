@@ -226,8 +226,8 @@ padding: .5em;
 /*MAIN INTRO PAGE STYLING*/
 .intro {
   background-image: url("../images/ice.jpeg");
-  background-size: cover;
-  height: 608px;
+  background-size: 100% auto;
+  background-repeat:no-repeat;
   margin: 0;
   align-items: center;
   align-content: center;
@@ -296,9 +296,12 @@ padding: .5em;
 
       .drinks {
         display: grid; /*using css grid layout*/
-        grid-template-columns: 1fr 1fr 1fr; /*create 3 column with grid*/
-        grid-template-rows: 1fr; /*create 4 rows*/
-      }
+        padding: 0;
+        grid-template-columns: repeat(auto-fit, 300px);
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    	}
 
       .eat {
         align-items: center;
@@ -309,20 +312,20 @@ padding: .5em;
         grid-template-rows: 1fr; /*create 1 rows*/
       }
 
-      #drinks__grid--left {
-        grid-row: 1; /*positioning bottom row*/
-        grid-column: 1; /*positioning center column*/
+      /*#drinks__grid--left {
+        grid-row: 1;
+        grid-column: 1;
       }
 
       #drinks__grid--center {
-        grid-row: 1; /*positioning bottom row*/
-        grid-column: 2; /*positioning center column*/
+        grid-row: 1;
+        grid-column: 2;
       }
 
       #drinks__grid--right {
-        grid-row: 1; /*positioning bottom row*/
-        grid-column: 3; /*positioning center column*/
-      }
+        grid-row: 1;
+        grid-column: 3;
+      }*/
 
       #eat__grid--center {
         grid-row: 1; /*positioning bottom row*/
@@ -606,8 +609,6 @@ label {
 input:valid {
   background-color: #e7b5ac;
 }
-/*I had invalid styling as well - but I chose to take it out because as a user I
-find it aggressive to change an angry color especially when there are messages as well: ) */
 
   /*PRINT STYLING IGNORED FOR SCREENS*/
   /*---------------------------------------------------*/
